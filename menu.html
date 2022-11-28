@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Assignment</title>
+    <link rel="stylesheet" href="/menu.css" />
+    <script>
+        
+
+function check() {
+ //var basic = 0;
+  var add = 0;  
+  if(document.getElementById("id_1").checked) {
+	add += 15;
+  }
+  if(document.getElementById("hot_Coffee").checked) {
+	add += 35;
+  }
+  if(document.getElementById("cold_Coffee").checked) {
+	add += 40;
+  }
+  if(document.getElementById("Dark_Chocolate_Coffee").checked) {
+	add += 60;
+  }
+  if(document.getElementById("Paneer_Pizza").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Corn_Pizaa").checked) {
+	add += 158;
+  }
+  if(document.getElementById("Veg_Burger").checked) {
+	add += 25;
+  }
+  if(document.getElementById("Chole_Bhature").checked) {
+	add += 180;
+  }
+  if(document.getElementById("Plain_Roti").checked) {
+	add += 8;
+  }
+  if(document.getElementById("Butter_Roti").checked) {
+	add += 12;
+  }
+  if(document.getElementById("Sahi_Paneer").checked) {
+	add += 150;
+  }
+  if(document.getElementById("Kadhai_Paneer").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Rayeta").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Momos").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Fried_momos").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Sandwich").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Noodles").checked) {
+	add += 199;
+  }
+  if(document.getElementById("Gulab_jamun").checked) {
+	add += 80;
+  }
+  var p =  add;
+  var price = p + "₹"; 
+  document.getElementById('total').innerHTML = price;  
+
+ }
+
+check();
+
+    </script>
+
+</head>
+
+<body>
+    <!-- <script src="for.js"></script> -->
+
+    <div class="container">
+        <div class="background_img">
+            <div class="form">
+                <button class="login">&nbsp;&nbsp;Login&nbsp; &nbsp;</button>
+
+                <button class="SignUp">&nbsp; &nbsp;SignUp&nbsp;&nbsp;</button>
+                <input class="search_bar" type="text" placeholder="Search.." />
+            </div>
+
+            <nav>
+                <div class="navbar">
+                    <h4><span>O</span>rder Your Favorite Food <span>Now..!</span></h4>
+                </div>
+            </nav>
+
+            <div class="button">
+                <button class="btn_1">
+                    <a href="/index.html"><b>&nbsp;Home&nbsp;</b></a>
+                </button>
+                <button class="btn_2">
+                    <a href="/contact.html"><b>&nbsp;Contact Us&nbsp;</b></a>
+                </button>
+                <button class="btn_3">
+                    <a href="/about.html"><b>&nbsp;About Us&nbsp;</b></a>
+                </button>
+
+            </div>
+
+   
+    <table>
+        <tr>
+          <th >&nbsp;S.Number&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>&nbsp;Food Items&nbsp;&nbsp;&nbsp;</th>
+          <th>&nbsp;Price&nbsp;&nbsp;&nbsp;</th>
+          <th>&nbsp;&nbsp;Select&nbsp;&nbsp;</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td >Chai</td>
+          <td>15/-</td>
+           <td><input type="checkbox" id="id_1" onchange="check()"></td>		
+      
+        </tr>
+        <tr>
+          <td>2</td>
+          <td> Hot Coffee</td>
+          <td>35/-</td>
+          <td ><input type="checkbox" id="hot_Coffee" onchange="check()">
+      
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Cold Coffee</td>
+          <td>40/-</td>
+          <td><input type="checkbox" id="cold_Coffee" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Dark Chocolate Coffee </td>
+          <td>60/-</td>
+          <td><input type="checkbox" id="Dark_Chocolate_Coffee" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+          </td>
+       
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>Paner Pizza</td>
+        <td>199/-</td>
+        <td><input type="checkbox" id="Paneer_Pizza" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Corn Pizza</td>
+        <td>158/-</td>
+        <td><input type="checkbox" id="Corn_Pizaa" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Veg Burger</td>
+        <td>25/-</td>
+        <td><input type="checkbox" id="Veg_Burger" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td> Chole Bhature</td>
+        <td>180/-</td>
+        <td><input type="checkbox" id="Chole_Bhature" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Plain Roti</td>
+        <td>8/-</td>
+        <td><input type="checkbox" id="Plain_Roti" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Butter Roti</td>
+        <td>12/-</td>
+        <td><input type="checkbox" id="Butter_Roti" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Sahi Paneer</td>
+        <td>150/-</td>
+        <td><input type="checkbox" id="Sahi_Paneer" onchange="check()">
+            <label for="hot_Coffee"></label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Kadhai Paneer</td>
+        <td>140/-</td>
+        <td><input type="checkbox" id="Kadhai_Paneer" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td> Rayeta</td>
+        <td>15/-</td>
+        <td><input type="checkbox" id="Rayeta" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td> Momos</td>
+        <td>50/-</td>
+        <td><input type="checkbox" id="Momos" onchange="check()">
+            <label for="hot_Coffee"></label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td> Fried momos</td>
+        <td>60/-</td>
+        <td><input type="checkbox" id="Fried_momos" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td> Sandwich</td>
+        <td>25/-</td>
+        <td><input type="checkbox" id="Sandwich" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td> Noodles</td>
+        <td>30/-</td>
+        <td><input type="checkbox" id="Noodles" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Gulab Jamun</td>
+        <td>80/-</td>
+        <td><input type="checkbox" id="Gulab_jamun" onchange="check()">
+            <!-- <label for="hot_Coffee"></label><br> -->
+        </td>
+
+      </table>
+      
+      <table >
+        <tr>
+      <td >Total Amount</td>
+          <td id="total"></td>
+        </tr>
+      </table>
+                
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
